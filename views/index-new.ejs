@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title><%= mytite %></title>
+  </head>
+  <body>
+    <%- include("./partials/header.ejs") %>
+    <h1 class="h1creat">creat a new box</h1>
+    <form class="formo" method="post" action="/html">
+      <label for="Title">Title</label>
+      <input name="Title" id="Title" type="text" required />
+
+      <label for="summary">summary</label>
+      <input name="summary" id="summary" type="text" required />
+
+      <label for="body">body</label>
+      <textarea name="body" id="body" cols="30" rows="10" required></textarea>
+
+      <button>create</button>
+    </form>
+    <%- include("./partials/footer.ejs") %>
+  </body>
+</html>
